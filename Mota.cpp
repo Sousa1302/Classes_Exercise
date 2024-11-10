@@ -1,5 +1,10 @@
 #include "Mota.h"
 
-Veiculo::Mota(string vehicle_name, string guidao){
+Mota::Mota(string Vehicle_Name, string Guidao) : Veiculo(Vehicle_Name){
+    guidao = Guidao;
+}
 
+void Mota::mostrarDetalhes(){
+    Veiculo::mostrarDetalhes();
+    cout << "Guidao: " << guidao << endl;
 }

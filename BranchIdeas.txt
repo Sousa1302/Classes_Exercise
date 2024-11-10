@@ -1,0 +1,11 @@
+Estrutura dos Ficheiros:
+
+    Veiculo.h - Declaração da classe base Veiculo
+    Veiculo.cpp - Implementação dos métodos da classe Veiculo
+    Carro.h - Declaração da classe Carro, que herda de Veiculo
+    Carro.cpp - Implementação dos métodos da classe Carro
+    Moto.h - Declaração da classe Moto, que herda de Veiculo
+    Moto.cpp - Implementação dos métodos da classe Moto
+    main.cpp - Ficheiro principal para testar o programa
+
+    fullfile.cpp - Ficheiro para distribuicao futura de codigo pelos outros ficheiros

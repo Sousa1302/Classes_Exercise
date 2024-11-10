@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 
 using namespace std;
@@ -35,20 +37,21 @@ class Mota : public Veiculo{
 
 class Carro : public Veiculo{
     private:
-        string numPortas;
+        int numPortas;
         
     public:
-        Carro(string NumPortas, string Name) : numPortas(numPortas), Veiculo(Name){
+        Carro(int NumPortas, string Name) : numPortas(numPortas), Veiculo(Name){
             
         }
 
         void mostrarDetalhes() override{
-            cout << "Carro: " << vehicle_name << " e o num de portas: " << numPortas << endl;
+            cout << "Carro: " << vehicle_name << endl << "Num de portas: " << numPortas << endl;
         }
 };
 
 
 int main(){
-    Carro car_1();
+    Carro car_1(10, "Mustang");
+    car_1.mostrarDetalhes();
     return 0;
 }
